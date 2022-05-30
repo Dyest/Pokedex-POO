@@ -1,35 +1,4 @@
-element.style {
-}
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-}
-.text-white {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important;
-}
-.p-3 {
-    padding: 1rem!important;
-}
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-user agent stylesheet
-header {
-    display: block;
-}
-
-body{
-    margin: 0;
-}
-body *{
-    box-sizing: border-box;
-}
-
-
-
 /* Index cards e Index logo*/
-
 
 .index{
     width: flex;
