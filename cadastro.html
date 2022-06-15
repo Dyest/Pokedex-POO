@@ -43,29 +43,34 @@
         <div class="right-login-singup">
             <div class="card-login-singup">
                 <h1>CADASTRO</h1>
-                <form action="">
-                    <div class="textfield">
+                <form id="form">
+
+                    <div class="textfield ">
                         <label for="usuario">Nome do Usuario</label>
-                        <input type="text" name="usuario" placeholder="Nome do Usuario">
+                        <input type="text" name="userName" placeholder="Nome do Usuario" id="userName">
+                        <small>Error Message</small>
                     </div>
-                    <div class="textfield">
+
+                    <div class="textfield ">
                         <label for="email">Email</label>
-                        <input type="text" name="email" placeholder="Email">
+                        <input type="email" name="userEmail" placeholder="Email" id="userEmail">
+                        <small>Error Message</small>
                     </div>
+
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha">
+                        <input type="password" name="userPass" placeholder="Senha" id="userPass">
+                        <small>Error Message</small>
                     </div>
-                    <div class="textfield">
-                        <label for="confsenha">Confirmar Senha</label>
-                        <input type="password" name="confsenha" placeholder="Confirmar-Senha">
-                    </div>
-                    <button class="btn-login-singup">Cadastro</button>
+
+                    <button class="btn-login-singup" type="submit"
+                        onclick="return checkName(), checkEmail(), checkPass(), checkCad()">Cadastro</button>
                 </form>
             </div>
         </div>
     </div>
 
+    <script src="./signupController.js"></script>
 </body>
 
 </html>

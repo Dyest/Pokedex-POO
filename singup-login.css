@@ -55,7 +55,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10px 0;
     width: 100%;
 }
 
@@ -96,5 +95,20 @@ body {
     cursor: pointer;
 }
 
-.form-login-singup{
+.textfield.success input{
+    border: 2px solid #20ea41
+}
+.textfield.error input{
+    border: 2px solid #ed2314
+}
+
+.textfield.error small{
+    visibility: visible;
+}
+
+.textfield small {
+    visibility: hidden;
+    font-size: 14px;
+    padding-left: 8px;
+    color: #b81b10;
 }
