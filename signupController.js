@@ -3,14 +3,6 @@ const username = document.getElementById("userName");
 const email = document.getElementById("userEmail");
 const password = document.getElementById("userPass");
 
-/*form.addEventListener("click", (e) => {
-
-  e.preventDefault();
-
-  checkInputs();
-
-});*/
-
 function checkName() {
   const usernameValue = userName.value.trim();
 
@@ -64,6 +56,14 @@ function checkPass() {
 
 function checkCad() {
   if (checkName() == false || checkEmail() == false || checkPass() == false) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function checkLog() {
+  if (checkEmail() == false || checkPass() == false) {
     return false;
   } else {
     return true;

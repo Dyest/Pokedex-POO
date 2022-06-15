@@ -43,20 +43,25 @@
         <div class="right-login-singup">
             <div class="card-login-singup">
                 <h1>LOGIN</h1>
-                <form class="form-login-singup" action="">
+                <form action="" id="form">
                     <div class="textfield">
                         <label for="email">Email</label>
-                        <input type="text" name="email" placeholder="email">
+                        <input type="text" name="userEmail" placeholder="email" id="userEmail">
+                        <small>Error Message</small>
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Senha">
+                        <input type="password" name="userPass" placeholder="Senha" id="userPass">
+                        <small>Error Message</small>
                     </div>
-                    <button class="btn-login-singup">Login</button>
+                    <button class="btn-login-singup"
+                        onclick="return  checkEmail(), checkPass(), checkLog()">Login</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="./signupController.js"></script>
 
 </body>
 
